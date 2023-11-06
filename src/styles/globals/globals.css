@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "../component/drobdown.css";
+@import "../component/search.css";
+
+@import "./class.css";
+
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
+.w-16 {
+  background: transparent linear-gradient(90deg, #d20653 0%, #9b0257 100%) 0% 0%
+    no-repeat padding-box !important;
+  margin-right: 15px;
+}
+
+nav {
+  display: block;
+}
+.breadcrumb {
+  background-color: #fff !important;
+  padding: 28px 0 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .form-control {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .w-75 {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .login-section {
+    width: 100% !important;
+  }
+}
+
+.login-section .breadcrumb-item,
+.breadcrumb-item {
+  position: relative;
+  right: 150px;
+  bottom: 40px;
+  padding-left: 0.5rem;
+}
+
+.breadcrumb-item.active {
+  color: rgb(181 179 179);
+}
+
+.breadcrumb .breadcrumb-item a {
+  color: #9b0256;
+}
+.arr-right .breadcrumb-item + .breadcrumb-item:before {
+  content: ">";
+  color: #9b0256;
+  line-height: 21px;
+}
+
+.nab-bread {
+  position: relative;
+  font-weight: 700;
+  font-size: 1.33rem;
+  color: #9b0256;
+  top: 65px;
+}
+
+.bg-gray {
+  background: #f3f3f3;
+}
+
+.page-section {
+  padding: 3rem 0;
+}
+
+.pt-5,
+.py-5 {
+  padding-top: 3rem !important;
+}
+
+.login-section {
+  padding: 46px 130px !important;
+  background: linear-gradient(312deg, #44205d, #572b78 80%);
+}
+
+.login-section h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 2.33rem;
+  margin-top: 10px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 50%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.btn-primary {
+  background: #f5b613;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+  margin: auto;
+  font-size: 14px;
+}
+
+.w-75 {
+  width: 30%;
+  border-radius: 5px;
+  padding: 5px;
+  align-items: center;
+}
